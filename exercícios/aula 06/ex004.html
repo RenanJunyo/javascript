@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(124, 124, 212);
+        color: white;
+        font: normal 1.7em Arial sans-serif;
+    }
+</style>
+
+<body>
+    <h1>Iniciando os estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> no JavaScript</p>
+    <div id="mensagem">Clique em mim</div>
+    <script>
+var p1 = window.document.getElementsByTagName('p')[0];
+var corpo = window.document.body;
+var mensagem = window.document.querySelector('div#mensagem');
+
+// Adicionando uma cor ao fundo do div ao passar o mouse sobre ele
+mensagem.onmouseover = function() {
+    mensagem.style.backgroundColor = 'lightblue';
+}
+
+// Removendo a cor ao remover o mouse
+mensagem.onmouseout = function() {
+    mensagem.style.backgroundColor = '';
+}
+
+// Adicionando uma resposta ao clicar
+mensagem.onclick = function() {
+    mensagem.innerText = 'Você clicou em mim!';
+}
+    </script>
+</body>
+</html>
