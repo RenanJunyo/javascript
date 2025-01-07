@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DETRAN</title>
 </head>
 <body>
-    
+    <h1>Sistema de multas</h1>
+    Velocidade do veículo: <input type="number" name="multa" id="multa">Km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var vel = Number(document.getElementById('multa').value)
+            var resultado = document.getElementById('resultado')
+
+            if(isNaN(vel) || vel <= 0){
+            resultado.innerHTML = 'Por favor, insira uma velocidade válida'
+            return
+            }
+            
+            if (vel >=80){
+                resultado.innerHTML = 'Você está acima da velocidade permitida.MULTADO'
+            }
+            
+            else{
+                resultado.innerHTML = `Sua velocidade atualmente é de ${vel}Km/h.`
+            }
+    }
+        
+    </script>
 </body>
 </html>
