@@ -1,0 +1,37 @@
+body{
+    background-color: #30738b;
+
+}
+h1{
+    text-align: center;
+    color: white;
+
+}
+
+section{
+    width: 700px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer, a{
+    color: white;
+    text-align: center;
+}
+
+a:hover{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.562);
+    font-size: 1.3em;
+    transition: 0.6s;
+
+}
+
+a:not(:hover) {
+    transition: 0.6s;
+}

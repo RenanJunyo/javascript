@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ligar e desligar Lampada</h1>
+
+    <section>
+        <input type="button" value="Ligar e desligar" onclick="alternar()">
+    </section>
+
+
+    <script>
+        let bgcolor = 'white'
+
+        function alternar(){
+            if(bgcolor === 'white'){
+                bgcolor = 'black'
+                document.body.style.backgroundColor = 'black'
+                document.body.style.color = 'white'
+            }else {
+                bgcolor = 'white'
+                document.body.style.backgroundColor = 'white'
+                document.body.style.color = 'black'
+            }
+
+
+
+        }
+
+
+    </script>
+</body>
+</html>
