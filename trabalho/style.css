@@ -15,15 +15,16 @@ body{
 header{
     background-color: #171D25;
     width: 100vw;
-    height: 120px;
+    min-height: 100px;
+    max-height: 190px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 header > a > img{
-    width: 200px;
+    max-width: 600px;
     height: 100px;
-    margin-left: 500px;
 }
 
 header nav a{
@@ -32,14 +33,32 @@ header nav a{
     color: #848C95;
 }
 
-nav{
-    margin-left: 50px;
+div{
+    position: relative;
+    top: 70px;
+    left: 30px;
+    width: 400px;
+
+}
+
+#categoria a{
+    color: #848C95;
+    text-decoration: none;
+}
+
+#categoria a:hover{
+    color: #5FB3E4;
+
+}
+
+header nav a:hover{
+    color: #FFFF;
 }
 
 footer{
     background-color: #171D25;
-    width: 100%;
-    height: 30px;
+    min-width: 100%;
+    max-width: 60px;
     position: absolute;
     bottom: 0%;
     text-align: center;

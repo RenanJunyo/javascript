@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroPlay - Aventura</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../imagens/fa.png" type="image/x-icon">
+    <style>
+        main {
+            padding: 30px;
+            margin-top: 120px;
+        }
+
+        h2 {
+            color: #00ccff;
+            margin-bottom: 20px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #171D25;
+            border: 1px solid #2c2c2c;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 204, 255, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card h3 {
+            color: #00ccff;
+            font-size: 0.8em;
+        }
+
+        .info {
+            font-size: 0.7em;
+            color: #aaa;
+        }
+
+        .desc {
+            font-size: 0.7em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../imagens/RetroPlay.png" alt="logo"></a>
+        <nav>
+            <a href="../index.html">Página Inicial</a>
+            <a href="#">Categorias</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Jogos de Aventura Retrô</h2>
+        <div class="card-grid">
+
+            <!-- Anos 80 -->
+            <div class="card">
+                <h3>The Legend of Zelda (1986)</h3>
+                <div class="info">NES</div>
+                <div class="desc">Exploração livre em mundo aberto</div>
+            </div>
+            <div class="card">
+                <h3>Zelda II: Adventure of Link (1987)</h3>
+                <div class="info">NES</div>
+                <div class="desc">Mistura de aventura e RPG</div>
+            </div>
+            <div class="card">
+                <h3>King's Quest (1984)</h3>
+                <div class="info">PC</div>
+                <div class="desc">Clássico da aventura gráfica</div>
+            </div>
+            <div class="card">
+                <h3>Maniac Mansion (1987)</h3>
+                <div class="info">PC, NES</div>
+                <div class="desc">Humor e múltiplos finais</div>
+            </div>
+
+            <!-- Anos 90 -->
+            <div class="card">
+                <h3>Zelda: A Link to the Past (1991)</h3>
+                <div class="info">SNES</div>
+                <div class="desc">Um dos melhores da série</div>
+            </div>
+            <div class="card">
+                <h3>Monkey Island (1990)</h3>
+                <div class="info">PC, Amiga</div>
+                <div class="desc">Diálogos hilários e puzzles</div>
+            </div>
+            <div class="card">
+                <h3>Alone in the Dark (1992)</h3>
+                <div class="info">PC</div>
+                <div class="desc">Terror e investigação</div>
+            </div>
+            <div class="card">
+                <h3>Flashback (1992)</h3>
+                <div class="info">Mega Drive</div>
+                <div class="desc">Animação fluida e sci-fi</div>
+            </div>
+            <div class="card">
+                <h3>Another World (1991)</h3>
+                <div class="info">Amiga, SNES</div>
+                <div class="desc">Atmosfera cinematográfica</div>
+            </div>
+            <div class="card">
+                <h3>Gabriel Knight (1993)</h3>
+                <div class="info">PC</div>
+                <div class="desc">Mistério sobrenatural</div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por: Renan, Erick, Kawany, João Vitor, Nara, Mariana e João Paulo</p>
+    </footer>
+</body>
+</html>
